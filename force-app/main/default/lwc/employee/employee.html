@@ -1,0 +1,18 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <div class="slds-p-horizontal_small">
+            <lightning-input label="Name" onchange={handleInputChange} name="name" class="inputs">
+            </lightning-input>
+            <lightning-input type="number" label="Age" onchange={handleInputChange} name="age" class="inputs">
+            </lightning-input>
+            <lightning-input type="date" label="DOB" onchange={handleInputChange} name="dob" class="inputs">
+            </lightning-input>
+            <br/>
+            <lightning-button 
+              variant="brand"
+              label="Save" 
+              onclick={handleSaveClick} 
+            ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
